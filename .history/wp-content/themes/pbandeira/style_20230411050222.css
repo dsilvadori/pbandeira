@@ -52,8 +52,3 @@ footer .container-full {
     background-color: var(--azul-claro);
     padding: 20px 0;
 }
-
-.container-redes {
-    max-width: 400px;
-    margin: 0 auto;
-}
