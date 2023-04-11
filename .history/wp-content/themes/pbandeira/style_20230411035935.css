@@ -1,0 +1,17 @@
+/*
+Theme Name: Pedro Bandeira
+Theme URI: https://wordpress.org/themes/twentytwentyone/
+Author: Daniel Silva
+Author URI: https://wordpress.org/
+Description: Tema criado para o site Pedro Bandeira
+Version: 1.0
+*/
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}

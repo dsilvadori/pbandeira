@@ -41,6 +41,5 @@ nav ul li a {
 
 .hr-site {
     color: var(--azul-claro);
-    border-top: 20px solid;
-    opacity: 1;
+    font-size: 20px;
 }

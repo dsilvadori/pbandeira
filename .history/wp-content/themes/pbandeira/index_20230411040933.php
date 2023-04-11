@@ -25,7 +25,7 @@
             </nav>
         </div>
         <div class="container-full">
-            <hr class="hr-site">
+            
         </div>
     </header>
     <main>

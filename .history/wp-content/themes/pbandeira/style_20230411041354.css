@@ -33,14 +33,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-.container-full {
-    max-width: 1920px;
-    display: block;
-    margin: 0 auto;
-}
-
 .hr-site {
     color: var(--azul-claro);
-    border-top: 20px solid;
-    opacity: 1;
 }
