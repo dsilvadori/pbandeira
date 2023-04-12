@@ -2,9 +2,12 @@
         <main>
             <section class="content">
                 <div class="container">
+                    <div class="cap">
+                        <p>P</p>
+                    </div>
                     <article>
                         <p>
-                            Pedro Bandeira nasceu em Santos, SP, em 9 de março de 1942, e vive em São Paulo, desde 1961, quando ingressou na Universidade de São Paulo para cursar Ciências Sociais. Desde 1962, suas principais atividades profissionais foram a de jornalista e editor, logo seguidas pela de publicitário, como redator, diretor de criação e diretor de marketing. Paralelamente, de 1962 a 1967, fez também teatro profissional como ator e diretor, e deu aulas de Literatura Brasileira e Portuguesa para o Ensino Médio e para cursos pré-vestibular. Trabalhou também em televisão em 1963 como apresentador de programas para a juventude e, de 1969 a 1984, protagonizou dezenas de comerciais para televisão.
+                            edro Bandeira nasceu em Santos, SP, em 9 de março de 1942, e vive em São Paulo, desde 1961, quando ingressou na Universidade de São Paulo para cursar Ciências Sociais. Desde 1962, suas principais atividades profissionais foram a de jornalista e editor, logo seguidas pela de publicitário, como redator, diretor de criação e diretor de marketing. Paralelamente, de 1962 a 1967, fez também teatro profissional como ator e diretor, e deu aulas de Literatura Brasileira e Portuguesa para o Ensino Médio e para cursos pré-vestibular. Trabalhou também em televisão em 1963 como apresentador de programas para a juventude e, de 1969 a 1984, protagonizou dezenas de comerciais para televisão.
                         </p>
                         <p>
                             A partir de 1972 começou a escrever histórias para crianças a serem publicadas em revistas de banca pelas editoras Abril, Saraiva e Rio Gráfica, até que, desde 1983, com a publicação de sua primeira história em formato de livro (“O dinossauro que fazia au-au”, pela Editora Moderna), passou a dedicar-se exclusivamente à criação de livros infantis e juvenis.
