@@ -14,7 +14,7 @@
         <div class="container">
             <nav>
                 <ul>
-                    <li><a href="#">biografia</a></li>
+                    <li><a href="<?php echo get_home_url(); ?>/biografia">biografia</a></li>
                     <li><a href="#">fotos</a></li>
                     <li><a href="#">livros</a></li>
                     <li><a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/img/logo-topo.png" alt="logo"></a></li>
