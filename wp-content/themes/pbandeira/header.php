@@ -10,7 +10,11 @@
     <title><?php the_title(); ?> - Pedro Bandeira</title>
     <?php wp_head(); ?>
 </head>
+<?php if (is_page()) : ?>
 <body class="<?php echo $post->post_name; ?>">
+<?php else: ?>
+<body>
+<?php endif; ?>
     <header>
         <div class="container">
             <nav>
