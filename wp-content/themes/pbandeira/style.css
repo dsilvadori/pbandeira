@@ -127,3 +127,15 @@ strong {
 .sec-livros .container {
     margin-bottom: 60px;
 }
+
+.text-desc {
+    padding: 40px 0;
+}
+
+.contato .col-md-1 {
+    padding-right: 0;
+}
+
+.contato .col-md-5 {
+    padding-left: 0;
+}

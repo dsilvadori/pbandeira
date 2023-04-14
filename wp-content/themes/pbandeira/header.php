@@ -16,12 +16,12 @@
             <nav>
                 <ul>
                     <li><a href="<?php echo get_home_url(); ?>/biografia">biografia</a></li>
-                    <li><a href="#">fotos</a></li>
-                    <li><a href="#">livros</a></li>
+                    <li><a href="<?php echo get_home_url(); ?>/fotos">fotos</a></li>
+                    <li><a href="<?php echo get_home_url(); ?>/livros">livros</a></li>
                     <li><a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/img/logo-topo.png" alt="logo"></a></li>
-                    <li><a href="#">vídeos</a></li>
-                    <li><a href="#">direitos autorais</a></li>
-                    <li><a href="#">contato</a></li>
+                    <li><a href="<?php echo get_home_url(); ?>/videos">vídeos</a></li>
+                    <li><a href="<?php echo get_home_url(); ?>/direitos-autorais">direitos autorais</a></li>
+                    <li><a href="<?php echo get_home_url(); ?>/contato">contato</a></li>
                 </ul>
             </nav>
         </div>
