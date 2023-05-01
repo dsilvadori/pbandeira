@@ -1,5 +1,5 @@
     <footer>
-        <div class="container-full">
+        <!-- <div class="container-full">
             <div class="container-redes">
                 <nav>
                     <ul>
@@ -10,7 +10,7 @@
                     </ul>
                 </nav>
             </div>
-        </div>
+        </div> -->
     </footer>
     <?php wp_footer(); ?>
 </body>

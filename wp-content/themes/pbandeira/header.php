@@ -16,20 +16,22 @@
 <body>
 <?php endif; ?>
     <header>
-        <div class="container">
+        <div class="topo">
             <nav>
                 <ul>
                     <li><a href="<?php echo get_home_url(); ?>/biografia">biografia</a></li>
                     <li><a href="<?php echo get_home_url(); ?>/fotos">fotos</a></li>
                     <li><a href="<?php echo get_home_url(); ?>/livros">livros</a></li>
-                    <li><a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/img/logo-topo.png" alt="logo"></a></li>
                     <li><a href="<?php echo get_home_url(); ?>/videos">vídeos</a></li>
+                    <li><a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/img/logo-topo.png" alt="logo"></a></li> 
                     <li><a href="<?php echo get_home_url(); ?>/direitos-autorais">direitos autorais</a></li>
                     <li><a href="<?php echo get_home_url(); ?>/contato">contato</a></li>
+                    <li><a href="https://www.facebook.com/pedrobandeira.oficial" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/facebook-icon.png" alt="logo"></a></li> 
+                    <li><a href="https://www.instagram.com/eupedrobandeira/ " target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/insta-icon.png" alt="logo"></a></li> 
+                    <li><a href="https://www.youtube.com/pedrobandeiraescritor" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/youtube-icon.png" alt="logo"></a></li> 
                 </ul>
             </nav>
-        </div>
-        <div class="container-full">
             <hr class="hr-site">
         </div>
+        
     </header>

@@ -2,11 +2,9 @@
 <main>
     <section class="content">
         <div class="container">
-            <div class="cap">
-                <p>N</p>
-            </div>
             <article>
-                <p>a minha carreira de escritor para crianças e adolescentes, há mais de 40 anos produzi e publiquei muuuitos livros que, você pode conhecer aqui. Cada livrinho destes tem um pedacinho de mim, alguma história que ouvi contarem, vi acontecer ou que imaginei, recombinando tudo o que já li e vivi.</p>
+                <h2>BIBLIOGRAFIA</h2>
+                <p>Na minha carreira de escritor para crianças e adolescentes, há mais de 40 anos produzi e publiquei muuuitos livros que, você pode conhecer aqui. Cada livrinho destes tem um pedacinho de mim, alguma história que ouvi contarem, vi acontecer ou que imaginei, recombinando tudo o que já li e vivi.</p>
                 <p>Para encontrar qualquer um desses livros, recomendo que procure na biblioteca da sua escola ou do seu bairro, vá até a sua livraria preferida para um passeio naquele mundo fantástico ou compre pela internet, se preferir.</p>
             </article>
             <aside>

@@ -13,12 +13,27 @@ Version: 1.0
 
 :root {
     --azul-claro: #33CCFF;
+    --azul-escuro: #336699;
     --amarelo: #FFFF00;
     --laranja: #FF9933;
 }
 
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Fira Sans', sans-serif;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 44px;
+    color: var(--azul-escuro);
+    margin-bottom: 40px;
 }
 
 
@@ -70,6 +85,7 @@ img {
 p {
     font-size: 20px;
     line-height: 36px;
+    margin-bottom: 30px;
 }
 
 section .container {
@@ -163,4 +179,30 @@ strong {
 
 .sec-livros.videos .container {
     display: block;
+}
+
+nav li a img {
+    max-width: 260px;
+    height: auto;
+}
+
+.topo {
+    position: fixed;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    display: block;
+}
+
+main {
+    margin-top: 228px;
+}
+
+.biografia article a {
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    width: 100%;
 }
