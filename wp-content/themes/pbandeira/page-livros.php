@@ -23,15 +23,15 @@
                 </div>
                 <div class="col-md-5">
                     <p><strong>A Bruxinha Invejosa</strong></p>
-                    <p> Série Pequenos e sabidos<br />
-                        Editora Moderna<br />
-                        Ilustrações: Rogério Coelho<br />
-                        Indicação: 1º Ano (EF1), 2º Ano (EF1), 3º Ano (EF1)<br />
-                        Faixa etária: A partir de 06 anos<br />
-                        Nível de leitura: Iniciante e em progresso<br />
-                        Assunto(s): Conto de humor<br />
-                        Tema(s) complementar(es): Diversidade cultural<br />
-                        Competência BNCC: 6. Trabalho e projeto de vida,<br /> 
+                    <p> <strong>Série</strong> Pequenos e sabidos<br />
+                        <strong>Editora</strong> Moderna<br />
+                        <strong>Ilustrações:</strong> Rogério Coelho<br />
+                        <strong>Indicação:</strong> 1º Ano (EF1), 2º Ano (EF1), 3º Ano (EF1)<br />
+                        <strong>Faixa etária:</strong> A partir de 06 anos<br />
+                        <strong>Nível de leitura:</strong> Iniciante e em progresso<br />
+                        <strong>Assunto(s):</strong> Conto de humor<br />
+                        <strong>Tema(s) complementar(es):</strong> Diversidade cultural<br />
+                        <strong>Competência BNCC:</strong> 6. Trabalho e projeto de vida,<br /> 
                         9. Empatia e cooperação
                     </p>
                 </div>
@@ -50,15 +50,15 @@
                 </div>
                 <div class="col-md-5">
                     <p><strong>A Bruxinha Invejosa</strong></p>
-                    <p> Série Pequenos e sabidos<br />
-                        Editora Moderna<br />
-                        Ilustrações: Rogério Coelho<br />
-                        Indicação: 1º Ano (EF1), 2º Ano (EF1), 3º Ano (EF1)<br />
-                        Faixa etária: A partir de 06 anos<br />
-                        Nível de leitura: Iniciante e em progresso<br />
-                        Assunto(s): Conto de humor<br />
-                        Tema(s) complementar(es): Diversidade cultural<br />
-                        Competência BNCC: 6. Trabalho e projeto de vida,<br /> 
+                    <p> <strong>Série</strong> Pequenos e sabidos<br />
+                        <strong>Editora</strong> Moderna<br />
+                        <strong>Ilustrações:</strong> Rogério Coelho<br />
+                        <strong>Indicação:</strong> 1º Ano (EF1), 2º Ano (EF1), 3º Ano (EF1)<br />
+                        <strong>Faixa etária:</strong> A partir de 06 anos<br />
+                        <strong>Nível de leitura:</strong> Iniciante e em progresso<br />
+                        <strong>Assunto(s):</strong> Conto de humor<br />
+                        <strong>Tema(s) complementar(es):</strong> Diversidade cultural<br />
+                        <strong>Competência BNCC:</strong> 6. Trabalho e projeto de vida,<br /> 
                         9. Empatia e cooperação
                     </p>
                 </div>

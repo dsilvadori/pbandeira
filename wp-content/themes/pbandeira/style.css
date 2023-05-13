@@ -128,7 +128,7 @@ strong {
 
 .sec-livros p {
     font-size: 20px;
-    line-height: 26px;
+    line-height: 32px;
 }
 
 .desc-livro {
@@ -192,10 +192,19 @@ nav li a img {
     background: #fff;
     width: 100%;
     display: block;
+    z-index: 999;
+}
+
+.videos .content h2 {
+    padding-top: 40px;
 }
 
 main {
     margin-top: 228px;
+}
+
+.customize-support main {
+    margin-top: 196px;
 }
 
 .biografia article a {
@@ -205,4 +214,8 @@ main {
     display: inline-block;
     padding: 10px 20px;
     width: 100%;
+}
+
+.fotos h2 {
+    padding-top: 40px;
 }
