@@ -15,60 +15,29 @@
         </div>
     </section>
     <section class="sec-livros">
+    <?php $i = 1; 
+    if( have_rows('livros_rep') ): 
+    while( have_rows('livros_rep') ): the_row(); ?>
         <div class="container">
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-2">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/A-Bruxinha-Invejosa.png" alt="">
+                    <img src="<?php the_sub_field('capa'); ?>" alt="Capa do Livro">
                 </div>
                 <div class="col-md-5">
-                    <p><strong>A Bruxinha Invejosa</strong></p>
-                    <p> <strong>Série</strong> Pequenos e sabidos<br />
-                        <strong>Editora</strong> Moderna<br />
-                        <strong>Ilustrações:</strong> Rogério Coelho<br />
-                        <strong>Indicação:</strong> 1º Ano (EF1), 2º Ano (EF1), 3º Ano (EF1)<br />
-                        <strong>Faixa etária:</strong> A partir de 06 anos<br />
-                        <strong>Nível de leitura:</strong> Iniciante e em progresso<br />
-                        <strong>Assunto(s):</strong> Conto de humor<br />
-                        <strong>Tema(s) complementar(es):</strong> Diversidade cultural<br />
-                        <strong>Competência BNCC:</strong> 6. Trabalho e projeto de vida,<br /> 
-                        9. Empatia e cooperação
-                    </p>
+                    <p><strong><?php the_sub_field('titulo'); ?></strong></p>
+                    <?php the_sub_field('informacoes'); ?>
                 </div>
                 <div class="col-md-4">
-                    <div class="desc-livro">
-                        <p>Micélia e Apotécia eram duas bruxinhas aprendizes. Só que Micélia era a primeira da classe e Apotécia era... a última! E não é que ela morria de inveja da colega estudiosa?! Que bruxinha preguiçosa! Em vez de estudar mais, ela resolveu fazer um feitiço para transformar Micélia numa barata casquenta! E você nem imagina a confusão em que ela se meteu! Se Apotécia estava morrendo de inveja, você vai morrer de rir quando ler essa história!</p>
+                    <div class="desc-livro <?php echo 'cor-'.($i%2); ?>">
+                        <?php the_sub_field('sinopse'); ?>
                     </div>
                 </div>
-            </div>
+            </div>    
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-2">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/A-Bruxinha-Invejosa.png" alt="">
-                </div>
-                <div class="col-md-5">
-                    <p><strong>A Bruxinha Invejosa</strong></p>
-                    <p> <strong>Série</strong> Pequenos e sabidos<br />
-                        <strong>Editora</strong> Moderna<br />
-                        <strong>Ilustrações:</strong> Rogério Coelho<br />
-                        <strong>Indicação:</strong> 1º Ano (EF1), 2º Ano (EF1), 3º Ano (EF1)<br />
-                        <strong>Faixa etária:</strong> A partir de 06 anos<br />
-                        <strong>Nível de leitura:</strong> Iniciante e em progresso<br />
-                        <strong>Assunto(s):</strong> Conto de humor<br />
-                        <strong>Tema(s) complementar(es):</strong> Diversidade cultural<br />
-                        <strong>Competência BNCC:</strong> 6. Trabalho e projeto de vida,<br /> 
-                        9. Empatia e cooperação
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <div class="desc-livro desc-laranja">
-                        <p>Micélia e Apotécia eram duas bruxinhas aprendizes. Só que Micélia era a primeira da classe e Apotécia era... a última! E não é que ela morria de inveja da colega estudiosa?! Que bruxinha preguiçosa! Em vez de estudar mais, ela resolveu fazer um feitiço para transformar Micélia numa barata casquenta! E você nem imagina a confusão em que ela se meteu! Se Apotécia estava morrendo de inveja, você vai morrer de rir quando ler essa história!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php $i++; 
+        endwhile; 
+        endif; ?>
     </section>
 </main>
 <?php get_footer(); ?>

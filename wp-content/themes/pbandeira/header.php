@@ -33,5 +33,27 @@
             </nav>
             <hr class="hr-site">
         </div>
+
+        <div class="topo-mobile">
+            <div class="container-menu-mobile">
+
+                    <a class="logo-mobile" href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/img/logo-topo.png" alt="logo"></a>
+
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn">
+                        <span class="navicon"></span>
+                    </label>
+                    <nav class='menu'>
+                        <a href="<?php echo get_home_url(); ?>/biografia">biografia</a>
+                        <a href="<?php echo get_home_url(); ?>/fotos">fotos</a>
+                        <a href="<?php echo get_home_url(); ?>/livros">livros</a>
+                        <a href="<?php echo get_home_url(); ?>/videos">vídeos</a>
+                        <a href="<?php echo get_home_url(); ?>/direitos-autorais">direitos autorais</a>
+                        <a href="<?php echo get_home_url(); ?>/contato">contato</a>
+                    </nav>
+
+            </div>
+            <hr class="hr-site">
+        </div>
         
     </header>
