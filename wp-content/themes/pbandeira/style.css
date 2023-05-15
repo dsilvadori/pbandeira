@@ -269,6 +269,18 @@ main {
         margin-left: 14px;
     }
 
+    a.redes-m {
+        max-width: 46px;
+        padding: 8px 0;
+    }
+
+    ul.redes-mobile {
+        padding: 20px 0;
+        max-width: 80%;
+        border: none;
+    }
+
+
 .menu-btn {
     display: none;
   }
@@ -327,12 +339,12 @@ main {
 
   .menu a {
     padding: 10px 20px;
-    border-right: 1px solid #f4f4f4;
     background-color: #fff;
     width: 100%;
     text-align: center;
     text-decoration: none;
     color: #000;
+        font-size: 20px;
     }
 
   .menu-btn:checked ~ .menu {
@@ -355,4 +367,68 @@ main {
   .menu-btn:checked ~ .menu-icon .navicon:after {
     top: 0;
   }
+  .customize-support main, main {
+        margin-top: 0;
+        padding: 0 14px;
+    }
+}
+
+@media (max-width:991px) {
+    .banner-principal .col-md-6 {
+        height: 360px;
+        padding: 0;
+    }
+}
+
+@media (max-width:767px) {
+    h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+    .banner-principal .col-6 {
+        height: 230px;
+        padding: 0;
+    }
+    .container {
+        padding: 0;
+    }
+    .biografia aside {
+        display: none;
+    }
+    .biografia article {
+        width: 100%;
+        padding: 40px 0;
+    }
+    .biografia article a {
+        font-size: 14px;
+    }
+    .livros aside {
+        display: none;
+    }
+    article {
+        width: 100%;
+        padding: 40px 0;
+        padding-right: 0;
+    }
+    .sec-livros {
+        margin: 0 auto 60px;
+    }
+    .sec-livros p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .sec-livros .col-md-2 {
+        margin-bottom: 10px;
+    }
+    .videos .col-12 {
+        padding: 0;
+    }
+    .col-12:nth-child(2n) {
+        padding: 0 14px;
+    }
 }

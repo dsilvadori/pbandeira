@@ -38,6 +38,8 @@
             <div class="container-menu-mobile">
 
                     <a class="logo-mobile" href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/img/logo-topo.png" alt="logo"></a>
+                    
+
 
                     <input class="menu-btn" type="checkbox" id="menu-btn" />
                     <label class="menu-icon" for="menu-btn">
@@ -50,6 +52,11 @@
                         <a href="<?php echo get_home_url(); ?>/videos">vídeos</a>
                         <a href="<?php echo get_home_url(); ?>/direitos-autorais">direitos autorais</a>
                         <a href="<?php echo get_home_url(); ?>/contato">contato</a>
+                        <ul class="redes-mobile">
+                            <li><a class="redes-m" href="https://www.facebook.com/pedrobandeira.oficial" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/facebook-icon.png" alt="logo"></a></li>
+                            <li><a class="redes-m" href="https://www.instagram.com/eupedrobandeira/ " target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/insta-icon.png" alt="logo"></a></li>
+                            <li><a class="redes-m" href="https://www.youtube.com/pedrobandeiraescritor" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/youtube-icon.png" alt="logo"></a></li>
+                        </ul>
                     </nav>
 
             </div>
