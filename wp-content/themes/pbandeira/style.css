@@ -224,6 +224,15 @@ main {
     display: none;
 }
 
+.fotos img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.fotos footer {
+    padding: 14px 0;
+}
 
   
   /* "Hide" checkbox -- moves it off screen*/
@@ -378,6 +387,11 @@ main {
         height: 360px;
         padding: 0;
     }
+    .fotos main img {
+        width: 100%!important;
+        margin-right: 0!important;
+        margin-top: 0!important;
+    }
 }
 
 @media (max-width:767px) {
@@ -430,5 +444,17 @@ main {
     }
     .col-12:nth-child(2n) {
         padding: 0 14px;
+    }
+    .direitos-autorais aside {
+        display: none;
+    }
+    .direitos-autorais article {
+        width: 100%!important;
+    }
+    .contato .col-md-6 {
+        padding: 0;
+    }
+    .contato .col-md-5 {
+        padding: 10px 14px;
     }
 }
