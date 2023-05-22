@@ -6,6 +6,13 @@
 */
 
 /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
 Theme Name: Pedro Bandeira
 Theme URI: https://wordpress.org/themes/twentytwentyone/
 Author: Daniel Silva
@@ -41,6 +48,7 @@ h2 {
     font-size: 44px;
     color: var(--azul-escuro);
     margin-bottom: 40px;
+    text-transform: uppercase;
 }
 
 
@@ -252,6 +260,35 @@ main {
     display: none!important;
 }
 
+a.email-contato {
+}
+
+.email-contato {
+    color: #000;
+    padding: 18px 60px;
+    background-size: cover!important;
+    text-decoration: none;
+}
+
+.contato input {
+    max-width: 100%;
+    padding: 4px 10px;
+}
+
+
+
+.contato .wpcf7-submit {
+    background: var(--azul-claro);
+    color: #fff;
+    border-color: var(--azul-claro);
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    margin: 0!important;
+}
+
   
   /* "Hide" checkbox -- moves it off screen*/
   #menu-btn {
@@ -291,7 +328,7 @@ main {
     .container-menu-mobile {
         display: -ms-grid;
         display: grid;
-            grid-template-areas:
+                grid-template-areas:
            "title   title   hamburger"
            "nav     nav     nav";
       }
@@ -450,6 +487,27 @@ main {
       }
 }
 
+
+@media (max-width:1120px){
+
+    .logo-mobile {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+      }
+
+    .menu-icon {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+      }
+
+    .menu {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+      }
+}
+
 @media (max-width:991px) {
     .banner-principal .col-md-6 {
         height: 360px;
@@ -537,5 +595,18 @@ main {
     .topo-biografia .col-3 {
         height: 100px;
         background-size: cover!important;
+    }
+    .email-contato {
+        padding: 12px 20px 14px 44px;
+    }
+    .contato .wpcf7-submit {
+        width: 100%;
+    }
+    .contato .col-md-6.col-12 {
+        margin-bottom: -16px;
+    }
+    .form-newsletter .row {
+        max-width: 100%;
+        margin: 0;
     }
 }
