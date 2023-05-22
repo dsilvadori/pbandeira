@@ -3,6 +3,18 @@
             <section class="content">
                 <div class="container">
                     <article>
+                        <div class="topo-biografia mobile-view">
+                            <div class="row">
+                                <div class="col-3" style="background:url(<?php echo get_template_directory_uri() ?>/img/PEDRO-BANDEIRA-34.png)">
+                                </div>
+                                <div class="col-3" style="background:url(<?php echo get_template_directory_uri() ?>/img/PEDRO-BANDEIRA-35.png)">
+                                </div>
+                                <div class="col-3" style="background:url(<?php echo get_template_directory_uri() ?>/img/PEDRO-BANDEIRA-33.png)">
+                                </div>
+                                <div class="col-3" style="background:url(<?php echo get_template_directory_uri() ?>/img/PEDRO-BANDEIRA-36.png)">
+                                </div>
+                            </div>
+                        </div>
                         <h2>QUEM É O PEDRO</h2>
                         <p>
                             Pedro Bandeira nasceu em Santos, SP, em 9 de março de 1942, e vive em São Paulo, desde 1961, quando ingressou na Universidade de São Paulo para cursar Ciências Sociais. Desde 1962, suas principais atividades profissionais foram a de jornalista e editor, logo seguidas pela de publicitário, como redator, diretor de criação e diretor de marketing. Paralelamente, de 1962 a 1967, fez também teatro profissional como ator e diretor, e deu aulas de Literatura Brasileira e Portuguesa para o Ensino Médio e para cursos pré-vestibular. Trabalhou também em televisão em 1963 como apresentador de programas para a juventude e, de 1969 a 1984, protagonizou dezenas de comerciais para televisão.
