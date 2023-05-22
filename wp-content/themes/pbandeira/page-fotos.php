@@ -77,7 +77,7 @@
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <a href="<?php echo get_template_directory_uri() ?>/img/0078.jpg" class="glightbox"><img src="<?php echo get_template_directory_uri() ?>/img/0078.jpg" alt=""></a>
-                    <a href="<?php echo get_template_directory_uri() ?>/img/0078.jpg" class="glightbox"><img src="<?php echo get_template_directory_uri() ?>/img/0080.jpg" alt=""></a>
+                    <a href="<?php echo get_template_directory_uri() ?>/img/0080.jpg" class="glightbox"><img src="<?php echo get_template_directory_uri() ?>/img/0080.jpg" alt=""></a>
                 </div>
             </div>
         </div>
