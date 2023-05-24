@@ -1,18 +1,4 @@
 /*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
 Theme Name: Pedro Bandeira
 Theme URI: https://wordpress.org/themes/twentytwentyone/
 Author: Daniel Silva
@@ -279,7 +265,7 @@ a.email-contato {
 
 .contato .wpcf7-submit {
     background: var(--azul-claro);
-    color: #fff;
+    color: #000;
     border-color: var(--azul-claro);
     border-radius: 3px;
     font-weight: 500;
@@ -328,7 +314,7 @@ a.email-contato {
     .container-menu-mobile {
         display: -ms-grid;
         display: grid;
-                grid-template-areas:
+                    grid-template-areas:
            "title   title   hamburger"
            "nav     nav     nav";
       }
@@ -508,6 +494,27 @@ a.email-contato {
       }
 }
 
+
+@media (max-width:1120px){
+
+    .logo-mobile {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+      }
+
+    .menu-icon {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+      }
+
+    .menu {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+      }
+}
+
 @media (max-width:991px) {
     .banner-principal .col-md-6 {
         height: 360px;
@@ -608,5 +615,14 @@ a.email-contato {
     .form-newsletter .row {
         max-width: 100%;
         margin: 0;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {    
+    .email-contato {
+        color: #000;
+        padding: 18px 60px;
+        background-size: cover!important;
+        text-decoration: none;
     }
 }

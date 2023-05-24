@@ -35,8 +35,8 @@
                         </p>
                         <p><a href="https://www.moderna.com.br/autoresexclusivos/pedro-bandeira/pedro-bandeira-biografia.htm" target="_blank" style="background:url(<?php echo get_template_directory_uri() ?>/img/bg-link-1.png)">Como a Editora Moderna me apresenta</a></p>
                         <p><a href="https://pt.wikipedia.org/wiki/Pedro_Bandeira" target="_blank" style="background:url(<?php echo get_template_directory_uri() ?>/img/bg-link-2.png)">O que dizem de mim na Wikipedia</a></p>
-                        <p><a href="https://acervo.museudapessoa.org/pt/conteudo/pessoa/pedro-bandeira-22453" target="_blank" style="background:url(<?php echo get_template_directory_uri() ?>/img/bg-link-3.png)">Uma conversa muito bacana que tive com o pessoal do Museu da Pessoa</a></p>
-                        <p><a href="https://enciclopedia.itaucultural.org.br/pessoa7372/pedro-bandeira" target="_blank" style="background:url(<?php echo get_template_directory_uri() ?>/img/bg-link-4.png)">Essa entrevista que está na Enciclopédia Itaú Cultural</a></p>
+                        <!-- <p><a href="https://acervo.museudapessoa.org/pt/conteudo/pessoa/pedro-bandeira-22453" target="_blank" style="background:url(<?php echo get_template_directory_uri() ?>/img/bg-link-3.png)">Uma conversa muito bacana que tive com o pessoal do Museu da Pessoa</a></p> -->
+                        <p><a href="https://enciclopedia.itaucultural.org.br/pessoa7372/pedro-bandeira" target="_blank" style="background:url(<?php echo get_template_directory_uri() ?>/img/bg-link-3.png)">Essa entrevista que está na Enciclopédia Itaú Cultural</a></p>
                     </article>
                     <aside>
                         <img src="<?php echo get_template_directory_uri() ?>/img/PEDRO-BANDEIRA-34.png" alt="">
