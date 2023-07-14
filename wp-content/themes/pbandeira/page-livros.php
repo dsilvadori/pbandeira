@@ -15,29 +15,65 @@
         </div>
     </section>
     <section class="sec-livros">
-    <?php $i = 1; 
-    if( have_rows('livros_rep') ): 
-    while( have_rows('livros_rep') ): the_row(); ?>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-2">
-                    <img src="<?php the_sub_field('capa'); ?>" alt="Capa do Livro">
+        <div class="container" id="itens-livros">
+            
+            <div class="sidebar" id="sidebar">
+                <div id="livro-filters">
+                    <h3>Filtros</h3>
+                    <?php echo do_shortcode( '[fe_widget]' ); ?>
                 </div>
-                <div class="col-md-5">
-                    <p><strong><?php the_sub_field('titulo'); ?></strong></p>
-                    <?php the_sub_field('informacoes'); ?>
+            </div>
+            <div id="content-livros">
+                <div class="row">
+                <?php $new_query = new WP_Query( array(
+                    'posts_per_page' => 999,
+                    'post_type'      => 'livro',
+                    'orderby' => 'title',
+                    'order'   => 'ASC',
+                ) );
+                $i = 1; 
+                while ( $new_query->have_posts() ) : $new_query->the_post();  ?>
+                <?php 
+                // Taxonomias
+                $colecao_serie = get_the_terms( $post->ID , 'colecao-serie' );
+                $editora = get_the_terms( $post->ID , 'editora' );
+                $indicacao = get_the_terms( $post->ID , 'indicacao' );
+                $faixa_etaria = get_the_terms( $post->ID , 'faixa-etaria' );
+                $nivel_de_leitura = get_the_terms( $post->ID , 'nivel-de-leitura' );
+                $assunto = get_the_terms( $post->ID , 'assunto' );
+                $tema_complementar = get_the_terms( $post->ID , 'tema-complementar' );
+                ?>
+
+                        <div class="col-md-3">
+                            <a href="<?php the_permalink(); ?>"><img src="<?php the_field('capa_do_livro'); ?>" alt="Capa do livro"></a>
+                        </div>
+                        <div class="col-md-5">
+                            <a href="<?php the_permalink(); ?>"><p><strong><?php the_title(); ?></strong></p></a>
+                            <a href="<?php the_permalink(); ?>"><p class="filtros-livros">
+                                <strong>Coleção/série:</strong> <?php foreach ( $colecao_serie as $term ) { echo $term->name; }  ?><br />
+                                <strong>Editora:</strong> <?php foreach ( $editora as $term ) { echo $term->name; }  ?><br />
+                                <strong>Indicação:</strong> <?php foreach ( $indicacao as $term ) { echo $term->name; }  ?><br />
+                                <strong>Faixa etária:</strong> <?php foreach ( $faixa_etaria as $term ) { echo $term->name; }  ?><br />
+                                <strong>Nível de leitura:</strong> <?php foreach ( $nivel_de_leitura as $term ) { echo $term->name; }  ?><br />
+                                <strong>Assunto(s):</strong> <?php foreach ( $assunto as $term ) { echo $term->name; }  ?><br />
+                                <strong>Tema(s) complementar(es):</strong> <?php foreach ( $tema_complementar as $term ) { echo $term->name; }  ?><br />
+                            </p></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="<?php the_permalink(); ?>"><div class="desc-livro <?php echo 'cor-'.($i%2); ?>">
+                                <p><?php the_field('descricao_livro'); ?></p>
+                            </div></a>
+                        </div>
+                    
+                    
+                
+
+                <?php $i++;  
+                endwhile;  
+                wp_reset_postdata(); ?>
                 </div>
-                <div class="col-md-4">
-                    <div class="desc-livro <?php echo 'cor-'.($i%2); ?>">
-                        <?php the_sub_field('sinopse'); ?>
-                    </div>
-                </div>
-            </div>    
+            </div>
         </div>
-        <?php $i++; 
-        endwhile; 
-        endif; ?>
     </section>
 </main>
 <?php get_footer(); ?>

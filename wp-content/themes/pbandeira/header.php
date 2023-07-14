@@ -14,7 +14,9 @@
 </head>
 <?php if (is_page()) : ?>
 <body class="<?php echo $post->post_name; ?>">
-<?php else: ?>
+<?php elseif (is_single()) : ?>
+<body class="single">
+<?php else : ?>
 <body>
 <?php endif; ?>
     <header>

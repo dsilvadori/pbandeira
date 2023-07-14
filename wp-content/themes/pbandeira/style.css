@@ -131,12 +131,13 @@ strong {
 }
 
 .sec-livros {
-    margin: 120px auto 60px;
+    margin: 10px auto;
 }
 
 .sec-livros p {
     font-size: 20px;
     line-height: 32px;
+    margin-bottom: 16px;
 }
 
 .desc-livro {
@@ -190,7 +191,7 @@ strong {
 }
 
 nav li a img {
-    max-width: 260px;
+    max-width: 160px;
     height: auto;
 }
 
@@ -208,11 +209,11 @@ nav li a img {
 }
 
 main {
-    margin-top: 228px;
+    margin-top: 148px;
 }
 
 .customize-support main {
-    margin-top: 196px;
+    margin-top: 116px;
 }
 
 .biografia article a {
@@ -274,6 +275,11 @@ a.email-contato {
 .wpcf7 form .wpcf7-response-output {
     margin: 0!important;
 }
+
+.single main {
+    padding: 40px 0;
+}
+
 
   
   /* "Hide" checkbox -- moves it off screen*/
@@ -515,6 +521,57 @@ a.email-contato {
       }
 }
 
+.sec-livros .row>* {
+    margin-bottom: 60px;
+}
+
+.sec-livros a {
+    color: #000;
+    text-decoration: none;
+}
+
+.single .more-info {
+    margin-top: 40px;
+}
+
+.wpc-filter-header {
+    font-weight: bold;
+}
+
+.wpc-filters-main-wrap .wpc-filters-labels li.wpc-term-item label {
+    margin-right: 0!important;
+    font-size: 16px;
+}
+
+
+div#itens-livros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#sidebar {
+    flex-basis: 20%;
+    padding-right: 28px;
+    height: 420px; 
+    overflow: auto;
+    min-height: 200px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+div#content-livros {
+    flex-basis: 78%;
+    height: 420px; 
+    overflow: auto;
+    overflow-x: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
 @media (max-width:991px) {
     .banner-principal .col-md-6 {
         height: 360px;
@@ -615,6 +672,9 @@ a.email-contato {
     .form-newsletter .row {
         max-width: 100%;
         margin: 0;
+    }
+    .single .row>* {
+        margin-bottom: 30px;
     }
 }
 
