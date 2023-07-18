@@ -543,6 +543,9 @@ a.email-contato {
     font-size: 16px;
 }
 
+span.space-coma:only-of-type {
+    display: none;
+}
 
 div#itens-livros {
     display: flex;

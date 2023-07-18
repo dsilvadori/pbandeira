@@ -37,6 +37,7 @@
                 // Taxonomias
                 $colecao_serie = get_the_terms( $post->ID , 'colecao-serie' );
                 $editora = get_the_terms( $post->ID , 'editora' );
+                $ilustracoes = get_the_terms( $post->ID , 'ilustracoes' );
                 $indicacao = get_the_terms( $post->ID , 'indicacao' );
                 $faixa_etaria = get_the_terms( $post->ID , 'faixa-etaria' );
                 $nivel_de_leitura = get_the_terms( $post->ID , 'nivel-de-leitura' );
@@ -50,13 +51,14 @@
                         <div class="col-md-5">
                             <a href="<?php the_permalink(); ?>"><p><strong><?php the_title(); ?></strong></p></a>
                             <a href="<?php the_permalink(); ?>"><p class="filtros-livros">
-                                <strong>Coleção/série:</strong> <?php foreach ( $colecao_serie as $term ) { echo $term->name; }  ?><br />
-                                <strong>Editora:</strong> <?php foreach ( $editora as $term ) { echo $term->name; }  ?><br />
-                                <strong>Indicação:</strong> <?php foreach ( $indicacao as $term ) { echo $term->name; }  ?><br />
-                                <strong>Faixa etária:</strong> <?php foreach ( $faixa_etaria as $term ) { echo $term->name; }  ?><br />
-                                <strong>Nível de leitura:</strong> <?php foreach ( $nivel_de_leitura as $term ) { echo $term->name; }  ?><br />
-                                <strong>Assunto(s):</strong> <?php foreach ( $assunto as $term ) { echo $term->name; }  ?><br />
-                                <strong>Tema(s) complementar(es):</strong> <?php foreach ( $tema_complementar as $term ) { echo $term->name; }  ?><br />
+                                <strong>Coleção/série:</strong> <?php $text = ''; foreach ( $colecao_serie as $term ) { $text .= $term->name.', '; } $text = rtrim($text, ', '); echo $text;   ?><br />
+                                <strong>Editora:</strong> <?php $text = ''; foreach ( $editora as $term ) { $text .= $term->name.', '; } $text = rtrim($text, ', '); echo $text;  ?><br />
+                                <strong>Ilustrações:</strong> <?php $text = ''; foreach ( $ilustracoes as $term ) { $text .= $term->name.', '; } $text = rtrim($text, ', '); echo $text;  ?><br />
+                                <strong>Indicação:</strong> <?php $text = ''; foreach ( $indicacao as $term ) { $text .= $term->name.', '; } $text = rtrim($text, ', '); echo $text;  ?><br />
+                                <strong>Faixa etária:</strong> <?php $text = ''; foreach ( $faixa_etaria as $term ) { $text .= $term->name.', '; } $text = rtrim($text, ', '); echo $text;  ?><br />
+                                <strong>Nível de leitura:</strong> <?php $text = ''; foreach ( $nivel_de_leitura as $term ) { $text .= $term->name.', '; } $text = rtrim($text, ', '); echo $text;  ?><br />
+                                <strong>Assunto(s):</strong> <?php $text = ''; foreach ( $assunto as $term ) { $text .= $term->name.', '; } $text = rtrim($text, ', '); echo $text;  ?><br />
+                                <strong>Tema(s) complementar(es):</strong> <?php $text = ''; foreach ( $tema_complementar as $term ) { $text .= $term->name.', '; } $text = rtrim($text, ', '); echo $text;  ?><br />
                             </p></a>
                         </div>
                         <div class="col-md-4">
