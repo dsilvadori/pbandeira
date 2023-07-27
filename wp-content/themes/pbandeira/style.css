@@ -679,6 +679,24 @@ div#content-livros {
     .single .row>* {
         margin-bottom: 30px;
     }
+    div#sidebar {
+        flex-basis: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    div#content-livros {
+        flex-basis: 100%;
+        height: auto;
+    }
+    .sec-livros .row>* {
+        margin-bottom: 10px;
+    }
+    .sec-livros .col-md-4 {
+        margin-bottom: 60px;
+    }
+    .single main {
+        padding: 40px 14px!important;
+    }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {    

@@ -9,6 +9,8 @@ $faixa_etaria = get_the_terms( $post->ID , 'faixa-etaria' );
 $nivel_de_leitura = get_the_terms( $post->ID , 'nivel-de-leitura' );
 $assunto = get_the_terms( $post->ID , 'assunto' );
 $tema_complementar = get_the_terms( $post->ID , 'tema-complementar' );
+$informacoes_adicionais = get_field('informacoes_adicionais');
+$video = get_field('video_embed');
 ?>
     <main>
         <div class="container">
@@ -35,12 +37,16 @@ $tema_complementar = get_the_terms( $post->ID , 'tema-complementar' );
                     </div>
                 </div>
             </div>
-            <div class="more-info" style="padding:20px 0">
+            <?php if (!empty($informacoes_adicionais)) : ?>
+            <div class="more-info" style="padding-top:20px">
                 <?php the_field('informacoes_adicionais'); ?>
             </div>
-            <div class="video-container">
+            <?php endif; ?>
+            <?php if (!empty($video)) : ?>
+            <div class="video-container" style="padding-top:20px">
                 <?php the_field('video_embed'); ?>
             </div>
+            <?php endif; ?>
             
         </div>
     </main>
