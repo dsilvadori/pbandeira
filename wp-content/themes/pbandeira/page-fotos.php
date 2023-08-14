@@ -80,6 +80,22 @@
                     <a href="<?php echo get_template_directory_uri() ?>/img/0080.jpg" class="glightbox"><img src="<?php echo get_template_directory_uri() ?>/img/0080.jpg" alt=""></a>
                 </div>
             </div>
+            <?php $i = 1;
+            if( have_rows('fotos') ): 
+            while( have_rows('fotos') ): the_row(); ?>
+            <div style="background:url(<?php echo get_template_directory_uri().'/img/fundo-creditos-'.$i.'.png'; ?>);font-weight:400;font-size:20px;padding:16px 10px;margin:40px 0 0;"><?php the_sub_field('titulo_credito'); ?></div>
+            <div class="row">
+                <?php if( have_rows('fotos_rep') ): 
+                while( have_rows('fotos_rep') ): the_row(); ?>
+                <div class="col-lg-3 col-md-12">
+                    <a href="<?php the_sub_field('foto_img'); ?>" class="glightbox"><img src="<?php the_sub_field('foto_img'); ?>" alt="Fotos Pedro Bandeira"></a>
+                </div>
+                <?php endwhile; 
+                endif; ?>
+            </div>
+            <?php $i++;
+            endwhile; 
+            endif; ?>      
         </div>
     </main>
 <?php get_footer(); ?>
