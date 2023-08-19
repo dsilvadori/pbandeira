@@ -83,7 +83,7 @@
             <?php $i = 1;
             if( have_rows('fotos') ): 
             while( have_rows('fotos') ): the_row(); ?>
-            <div style="background:url(<?php echo get_template_directory_uri().'/img/fundo-creditos-'.$i.'.png'; ?>);font-weight:400;font-size:20px;padding:16px 10px;margin:40px 0 0;"><?php the_sub_field('titulo_credito'); ?></div>
+            <div style="background:url(<?php echo get_template_directory_uri().'/img/fundo-creditos-'.$i.'.png'; ?>);font-weight:400;font-size:20px;padding:16px 10px;margin:40px 0 0;background-size:cover;"><?php the_sub_field('titulo_credito'); ?></div>
             <div class="row">
                 <?php if( have_rows('fotos_rep') ): 
                 while( have_rows('fotos_rep') ): the_row(); ?>
