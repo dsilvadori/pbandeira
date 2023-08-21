@@ -557,7 +557,7 @@ div#itens-livros {
 #sidebar {
     flex-basis: 22%;
     padding-right: 28px;
-    height: 420px; 
+    height: 390px; 
     overflow: auto;
     min-height: 200px;
     position: -webkit-sticky;
@@ -567,7 +567,7 @@ div#itens-livros {
 
 div#content-livros {
     flex-basis: 76%;
-    height: 420px; 
+    height: 390px; 
     overflow: auto;
     overflow-x: hidden;
     position: -webkit-sticky;

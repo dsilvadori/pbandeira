@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-    <section class="content">
+    <section class="content" id="topo-livros">
         <div class="container">
             <article>
                 <h2>BIBLIOGRAFIA</h2>
@@ -78,4 +78,29 @@
         </div>
     </section>
 </main>
+<style>
+    #topo-livros.scrollHide {
+        visibility: hidden;
+    }
+    @media (max-width:767px) {
+        #topo-livros.scrollHide {
+            visibility: inherit;;
+        }
+    } 
+</style>
+<script>
+    const header = document.getElementById('topo-livros')
+    const headerClassList = header.classList
+    window.addEventListener('scroll', () => {
+    if (window.scrollY >= 200) {
+        if (!headerClassList.contains('scrollHide')) {
+        headerClassList.add('scrollHide')
+        }
+    } else {
+        if (headerClassList.contains('scrollHide')) {
+        headerClassList.remove('scrollHide')
+        }
+    }
+    })
+</script>
 <?php get_footer(); ?>
