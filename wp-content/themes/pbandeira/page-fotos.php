@@ -1,8 +1,7 @@
 <?php get_header(); ?>
     <main>
         <div class="container">
-            <h2>OLHA COMO EU SOU FOTOGÊNICO</h2>
-            <p>Aqui tem fotos minhas para divulgação. Fique a vontade para usar essas fotos oficiais. Só não se esqueça de dar o crédito ao fotógrafo.</p>
+            <?php the_content(); ?>
             <div style="background:url(<?php echo get_template_directory_uri() ?>/img/fundo-creditos-1.png);font-weight:400;font-size:20px;padding:16px 10px;margin:0">Fotos de Felipe Panfili</div>
             <div class="row">
                 <div class="col-lg-3 col-md-12">
