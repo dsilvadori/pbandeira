@@ -1,18 +1,18 @@
 <?php get_header(); ?>
 <main>
     <section class="content" id="topo-livros">
-        <div class="container">
-            <article>
-                <h2>BIBLIOGRAFIA</h2>
-                <p>Na minha carreira de escritor para crianças e adolescentes, há mais de 40 anos produzi e publiquei muuuitos livros que, você pode conhecer aqui. Cada livrinho destes tem um pedacinho de mim, alguma história que ouvi contarem, vi acontecer ou que imaginei, recombinando tudo o que já li e vivi.</p>
-                <p>Para encontrar qualquer um desses livros, recomendo que procure na biblioteca da sua escola ou do seu bairro, vá até a sua livraria preferida para um passeio naquele mundo fantástico ou compre pela internet, se preferir.</p>
-            </article>
-            <aside>
-                <div class="picture-band">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/PEDRO-BANDEIRA-18.png" alt="Pedro Bandeira">
+            <div class="row">
+                <div class="col-md-6 offset-md-1 order-md-1 order-2">
+                    <h2>BIBLIOGRAFIA</h2>
+                    <p>Na minha carreira de escritor para crianças e adolescentes, há mais de 40 anos produzi e publiquei muuuitos livros que, você pode conhecer aqui. Cada livrinho destes tem um pedacinho de mim, alguma história que ouvi contarem, vi acontecer ou que imaginei, recombinando tudo o que já li e vivi.</p>
+                    <p>Para encontrar qualquer um desses livros, recomendo que procure na biblioteca da sua escola ou do seu bairro, vá até a sua livraria preferida para um passeio naquele mundo fantástico ou compre pela internet, se preferir.</p>
                 </div>
-            </aside>
-        </div>
+                <div class="col-md-5 order-md-2 order-1">
+                    <div class="imagem-topo">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/PEDRO-BANDEIRA-18.png" alt="Pedro Bandeira">
+                    </div>
+                </div>
+            </div>
     </section>
     <section class="sec-livros">
         <div class="container" id="itens-livros">
@@ -78,29 +78,5 @@
         </div>
     </section>
 </main>
-<style>
-    #topo-livros.scrollHide {
-        visibility: hidden;
-    }
-    @media (max-width:767px) {
-        #topo-livros.scrollHide {
-            visibility: inherit;;
-        }
-    } 
-</style>
-<script>
-    const header = document.getElementById('topo-livros')
-    const headerClassList = header.classList
-    window.addEventListener('scroll', () => {
-    if (window.scrollY >= 200) {
-        if (!headerClassList.contains('scrollHide')) {
-        headerClassList.add('scrollHide')
-        }
-    } else {
-        if (headerClassList.contains('scrollHide')) {
-        headerClassList.remove('scrollHide')
-        }
-    }
-    })
-</script>
+
 <?php get_footer(); ?>
