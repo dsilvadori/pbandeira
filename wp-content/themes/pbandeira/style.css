@@ -557,7 +557,7 @@ div#itens-livros {
 #sidebar {
     flex-basis: 22%;
     padding-right: 28px;
-    height: 400px; 
+    height: 60vh; 
     overflow: auto;
     min-height: 200px;
     position: -webkit-sticky;
@@ -567,7 +567,7 @@ div#itens-livros {
 
 div#content-livros {
     flex-basis: 76%;
-    height: 400px; 
+    height: 64vh; 
     overflow: auto;
     overflow-x: hidden;
     position: -webkit-sticky;
@@ -590,7 +590,7 @@ div#content-livros {
     }
     div#content-livros,
     #sidebar {
-        height: 520px; 
+        height: 70vh; 
     }
     .sec-livros p {
         font-size: 18px;
@@ -604,21 +604,28 @@ div#content-livros {
     }
     div#content-livros,
     #sidebar {
-        height: 640px; 
+        height: 76vh; 
     }
     section#topo-livros {
         max-width: 80%;
         margin: 0 auto;
     }
+    .home .col-lg-4.col-md-6.col-6 {
+        min-height: 70vh;
+    }
 }
 
 @media (min-width:2200px) {
-    div#content-livros, #sidebar {
-        height: 780px;
-    }
     section#topo-livros {
         max-width: 60%;
         margin: 0 auto;
+    }
+    div#content-livros,
+    #sidebar {
+        height: 78vh; 
+    }
+    .home .col-lg-4.col-md-6.col-6 {
+        min-height: 80vh;
     }
 } 
 
@@ -642,13 +649,6 @@ div#content-livros {
         width: 100%!important;
         margin-right: 0!important;
         margin-top: 0!important;
-    }
-}
-
-@media (min-height: 1440px) {
-    div#content-livros,
-    #sidebar {
-        height: 1200px; 
     }
 }
 
